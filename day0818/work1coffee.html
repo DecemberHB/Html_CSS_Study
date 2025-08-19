@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work1Coffee.html</title>
 </head>
-<style>
+<!-- <style>
     li
     {
         font-weight: bold;
@@ -15,8 +15,22 @@
     {
         color:cadetblue
     }
+    br
+    {
+        font-weight: bold;
+    }
+    del
+    {
+        color:red;
+     } 
    
-</style>
+</style> -->
+    <style>
+        .price 
+        {
+            color : red;
+        }
+    </style>
 <body>
     <!-- 
     순서 1] images
@@ -24,9 +38,11 @@
     순서 3] h1, ul / ol 선택
     순서 4] del, ins, u 
     08-19 화요일 아침 스타일적용
+    class 명명한 이름 접근 . 샘플 .price 
     -->
 
-    <img src="./images/main_4.jpg" width="350">
+    08-19-화요일 Coffee <br>
+    <img src="./images/suncat.jpg" width="350">
     <h1 style="color:cadetblue"> ☕Coffee Price </h1>
     <ul type="square">
         <li>아메리카노(Americano) 3,500원</li>
@@ -41,11 +57,11 @@
 
      <h1 style="color:cadetblue"> ☕Coffee Price </h1>
     <ul type="square">
-        <li>아메리카노(Americano) <del>3,500원</del></li>
+        <li>아메리카노(Americano) <del class = price>3,500원</del></li>
         <p>할인 적용 시 2,500원</p>
-        <li> 카페라떼(Cafe Latte) <del>5,500원</del></li>
+        <li> 카페라떼(Cafe Latte) <del class = price>5,500원</del></li>
         <p>할인 적용 시 2,500원</p>
-        <li> 카푸치노(Capucchino) <del>6,500원</del></li>
+        <li> 카푸치노(Capucchino) <del class = price>6,000원</del></li>
         <p>할인 적용 시 2,500원</p>
     </ul>
 

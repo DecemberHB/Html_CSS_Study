@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[04table2.html]</title>
+    <style>
+        *
+        {
+            font-size: 15px;
+        }
+
+        table,th,td
+        {
+            border:2px solid black;
+            border-collapse: collapse;
+        }
+
+        th,td
+        {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+    <blockquote>
+        <h2> 여러개의 컬럼 (columm) 합치기</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th colspan="3">Tel</th>
+                <th colspan="2">Email</th>
+            </tr>
+
+            <tr>
+                <td>Bill Gates</td>
+                <td>123-456-7777</td>
+                <td>123-456-8888</td>
+                <td>123-456-9999</td>
+                <td>aa@sk.com</td>
+                <td>bb@kt.com</td>
+            </tr>
+        </table>
+        <p></p>
+         <h2> 여러개의 행 (row) 합치기</h2>
+         <table width="500">
+            <tr>
+                <th>Name</th>
+                <th>Bile Gates</th>
+            </tr>
+
+            
+            <tr>
+                <th rowspan="2">Tel</th>
+                <td>222-333-7777</td>
+            </tr>
+            <tr>
+                <td>222-333-4885</td>
+            </tr>
+             <tr>
+                <th rowspan="3">Email</th>
+                <td>aaa@sk.com</td>
+            </tr>
+            <tr>
+                <td>bbb@sk.com</td>
+            </tr>
+            <tr>
+                <td>ccc@sk.com</td>
+            </tr>
+         
+         </table>
+
+    </blockquote>
+ 
+  
+    
+</body>
+</html>
