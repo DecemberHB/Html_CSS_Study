@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[03product.html]</title>
+    <style>
+
+        .conteiner
+        {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        ol
+        {
+            list-style: none; /* 생략 가능*/
+        }
+
+        ul
+        {
+            list-style: none;
+        }
+
+        li
+        {
+            margin-bottom: 10px;
+        }
+
+        .title
+        {
+            font-weight: bold;
+            width: 100px;
+            float : left /*배치를 왼쪽기준으로*/
+
+        }
+
+        fieldset
+        {
+            margin: 15px 10px; /*15px 상하, 10px 좌우마진*/
+        }
+
+        legend
+        {
+            font-weight: bold;
+            font-size: 15px;
+            color: green;
+        }
+        .user_addr
+        {
+            width: 300px;
+        }
+        #user_memo
+        {
+            width: 250px;
+            height: 50px;
+        }
+        .ordercenter
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="conteiner">
+         <h1>상품주문서</h1>
+        <form action="">
+    <fieldset>
+        <legend>개인정보</legend>
+        <ul>
+            <li>
+                <label for="user_name" class="title">이름</label>
+                <input type="text" name="user_name" required placeholder="여백없이 입력하시오">
+            </li>
+            <li>
+                <label for="user_tel" class="title">연락처</label>
+                <input type="text" name="user_tel" required placeholder="연락가능한 번호">
+            </li>
+        </ul>
+    </fieldset>
+    </form>
+    </div>
+
+    <div class="conteiner">
+        <form action="">
+    <fieldset>
+        <legend>배송지 정보</legend>
+        <ul>
+            <li>
+                <label for="user_addr" class="title">주소</label>
+                <input class="user_addr" type="text" name="user_addr">
+            </li>
+            <li>
+                <label for="user_tel2" class="title">연락처</label>
+                <input type="text" name="user_tel2">
+            </li>
+            <li>
+                <label for="user_memo" class="title">메모</label>
+                <textarea name="user_memo" id="user_memo"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+    </form>
+    </div>
+
+    
+    <div class="conteiner">
+        <form action="">
+    <fieldset>
+        <legend>주문 정보</legend>
+        <ul>
+            <li>
+                <label><input type="checkbox">과테말라 안티구아 (100g)</label>
+                <label><input type="number" max="10" min="1" value="0">개</label> <br>
+                <label><input type="checkbox">인도네이사 만델린 (100g)</label>
+                <label><input type="number" max="10" min="1" value="0">개</label> <br>
+                <label><input type="checkbox">브라질 콜드보루 (100g)</label>
+                <label><input type="number" max="10" min="1" value="0">개</label>
+        </ul>
+    </fieldset> <br>
+    <div class="ordercenter">
+        <input type="submit" value="주문하기"> &nbsp;
+        <input type="reset" value="다시 주문하기">
+    </div>
+
+
+    </form>
+    </div>
+
+
+</body>
+</html>

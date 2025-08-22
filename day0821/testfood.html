@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> testFood </title>
+<style>
+ 
+ .allfood
+ {
+    width: 900px;
+    height: 150px;
+    border:1px solid black;
+    padding : 5px;
+    margin: 20px;
+    text-align: center;
+
+ }
+  .food
+ {
+    width: 280px;
+    height: 200px;
+    border:1px solid black;
+    margin: 20px;
+    float: left;
+    text-align: center;
+ }
+ img
+ {
+    width: 80px;
+    height: 60px;
+    padding: 2px;
+ }
+
+
+ h2
+ {
+    font-size: 0.8em;
+    font-weight: bold;
+
+ }
+ 
+   
+
+   /* 1. 이미지 사이즈 조정
+    - food 속성의 div 태그, allfood 속성의 div태크 + 여백 padding : 5px;
+   2. h2 글꼴 0.8em 변경
+   3. 마진, 패딩 속성 food 속성의 div에 중앙 맞춤
+   4. food 속성 div 태그 float 속성 적용 */
+</style>
+
+<script>
+    var gate = 1234; //자바스크립트는 자바와 동일한 주석
+    function drag(food) {
+
+    }//end
+
+    function drop(food){
+        alert("드롭 함수 처리 프로시저");
+
+    }//end
+
+</script>
+</head>
+<body>
+    <div class="allfood" ondrag="" ondragover="">
+        <h2>해당하는 음식을 종류별로 드래그 해서 채워보세요.</h2>
+        <img src="imagefood/1.jpg" alt="비빔밥"  id="kor1"/>
+        <img src="imagefood/2.jpg" alt="전복죽"  id="kor2" />
+        <img src="imagefood/3.jpg" alt="빈대떡"  id="kor2"  />
+        <img src="imagefood/4.jpg" alt="골뱅이"  id="f1" />
+        <img src="imagefood/5.jpg" alt="김밥"   id="f2" />
+        <img src="imagefood/6.jpg" alt="떡복이"  id="f3" />
+        <img src="imagefood/7.jpg" alt="짜장면" id="ch1"  />
+        <img src="imagefood/8.jpg" alt="탕수육" id="ch2" />
+        <img src="imagefood/9.jpg" alt="회"   id="ch3" />
+    </div>
+    
+        <div class="food"  ondrag="" ondragover="">
+            <h2>한식</h2>
+        </div>
+        <div class="food"  ondrag="" ondragover="">
+            <h2>분식</h2>
+        </div>
+        <div class="food"  ondrag="" ondragover="">
+            <h2>중식</h2>
+        </div>
+</body>
+</html>
